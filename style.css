@@ -44,7 +44,25 @@ table {
 }
 
 
-li {
+/* Header Styles */
+
+section {
+	float: left;
+	width: 60%;
+}
+
+#log_in_links {
+	display: block;
+	position: relative;
+	float: right;
+	margin: 10px;
+}
+
+#log_in_links li {
+	display: inline;
+}
+
+#menu li {
 	display: block;
 	margin: 10px;
 	float: right;
@@ -56,25 +74,75 @@ li {
 	background-color: lightgray;
 }
 
-#log_in_links {
-	float: right;
-	position: relative;
-	left:-50%
-	text-align: center;
+#tag_line {
+	margin: 10px;
 }
 
 ul {
+	width: 345px;
+	background-color: blue;
 	clear: right;
 	list-style: none;
-	position: relative;
-}
-
-span {
-	float: right;
-	clear: left;
+	margin: 0 auto;
 }
 
 div {
 	background-color: lightgrey;
 	float: center;
+}
+
+/* Main Part */
+.status_update {
+	float: left;
+	clear: right;
+	padding: 10px;
+	margin: 10px;
+}
+
+.status_update img {
+	padding-right: 10px;
+	width: 200px;
+}
+
+.image_block {
+	float: left;
+}
+
+.status_update p {
+	display: inline;
+}
+
+/* Aside */
+aside {
+	width: 35%;
+	display: inline-block;
+	float: right;
+}
+
+.bio_block {
+	float: left;
+	clear: right;
+	padding: 10px;
+	margin: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+}
+
+.bio_block img {
+	padding-right: 10px;
+	width: 200px;
+}
+
+.bio_block {
+	float: left;
+}
+
+.bio_block p {
+	display: inline;
+}
+
+/* Footer */
+#footer_msg {
+	
 }
