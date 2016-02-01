@@ -44,7 +44,35 @@ table {
 }
 
 
+li {
+	display: block;
+	margin: 10px;
+	float: right;
+	text-align: center;
+	padding: 2px;
+	border: 1px;
+	width: 90px;
+	border-color: black;
+	background-color: lightgray;
+}
 
+#log_in_links {
+	float: right;
+	position: relative;
+	left:-50%
+	text-align: center;
+}
+
+ul {
+	clear: right;
+	list-style: none;
+	position: relative;
+}
+
+span {
+	float: right;
+	clear: left;
+}
 
 div {
 	background-color: lightgrey;
