@@ -192,7 +192,7 @@ section div {
 	margin: 10px;
 }
 
-.status_update img {
+.status_img {
 	padding-right: 10px;
 	width: 200px;
 }
@@ -263,4 +263,105 @@ aside div {
 	color: white;
 	background-color: #ff944d;
 	padding: 10px;	
+}
+
+#log_out {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 22px;
+}
+
+
+.profile_bio {
+	float: left;
+	clear: right;
+	padding: 10px;
+	margin: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #8a99a8;
+}
+
+.profile_bio img {
+	width: 200px;
+}
+
+.profile_bio .image_block {
+	margin: 0 50px 10px 50px;
+	padding: 15px;
+	background-color: #8a99a8;
+	color: white;
+	text-align: center;
+}
+
+.profile_bio p {
+	padding-bottom: 20px;
+}
+
+
+.profile_bio p {
+	display: inline;
+}
+
+#profile_section {
+	width: 40%;
+	float: left;
+	clear: left;
+}
+
+#aside_section {
+	width: 60%;
+}
+
+.profile_picture{
+	width: 75px;
+	padding-bottom: 10px;
+}
+
+/* List of All Users Styles */
+
+.loau_block {
+	float: left;
+	clear: right;
+	padding: 10px;
+	margin: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #8a99a8;
+}
+
+.loau_block img {
+	width: 200px;
+}
+
+.loau_block .image_block {
+	display: inline-block;
+	float: left;
+	margin: 0 50px 10px 50px;
+	padding: 15px;
+	background-color: #8a99a8;
+	color: white;
+	text-align: center;
+}
+
+.loau_paragraph {
+	display: inline-block;
+	float: left;
+	width: 60%;
+	text-align: left;
+	font-size: 18px;
+}
+
+.bio_block p {
+	padding-bottom: 20px;
+}
+
+.bio_block {
+	float: left;
+}
+
+.bio_block p {
+	display: inline;
 }
