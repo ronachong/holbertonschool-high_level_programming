@@ -50,6 +50,35 @@ table {
 
 /* Header Styles */
 
+body {
+	background-color: #cc6666;
+	font-family: Arial; Geneva, sans-serif;
+	font-size: 16px;
+	border-style: solid;
+	border-width: 15px;
+	border-color: #cc6666;
+
+}
+
+header {
+	border-style: solid;
+	border-width: 10px;
+	border-color: #cc6666;
+	
+}
+
+#logo {
+	margin: 15px;
+}
+
+h1 {
+	display: inline;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 32px;
+	position: relative;
+	bottom: 50px;
+}
+
 section {
 	float: left;
 	width: 60%;
@@ -60,10 +89,16 @@ section {
 	position: relative;
 	float: right;
 	margin: 10px;
+	color: #ff944d;
 }
 
 #log_in_links li {
 	display: inline;
+}
+
+#log_in_links a{
+	color: #ff944d;
+	text-decoration: none;
 }
 
 #menu li {
@@ -75,7 +110,7 @@ section {
 	border: 1px;
 	width: 90px;
 	border-color: black;
-	background-color: lightgray;
+	background-color: #ffdd99;
 }
 
 #tag_line {
@@ -90,12 +125,16 @@ ul {
 	margin: 0 auto;
 }
 
-div {
-	background-color: lightgrey;
+header {
+	background-color: #ffeee5;
 	float: center;
 }
 
 /* Main Part */
+section div {
+	background-color: #ffbb99;
+}
+
 .status_update {
 	float: left;
 	clear: right;
@@ -123,6 +162,10 @@ aside {
 	float: right;
 }
 
+aside div {
+	background-color: #ffdd99;
+}
+
 .bio_block {
 	float: left;
 	clear: right;
@@ -130,12 +173,23 @@ aside {
 	margin: 10px;
 	border-style: solid;
 	border-width: 2px;
-	border-color: black;
+	border-color: #8a99a8;
 }
 
 .bio_block img {
-	padding-right: 10px;
 	width: 200px;
+}
+
+.bio_block .image_block {
+	margin: 0 10px 10px 0;
+	padding: 10px;
+	background-color: #8a99a8;
+	color: white;
+	text-align: center;
+}
+
+.bio_block p {
+	padding-bottom: 20px;
 }
 
 .bio_block {
@@ -148,5 +202,10 @@ aside {
 
 /* Footer */
 #footer_msg {
-	
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	color: white;
+	background-color: #ff944d;
+	padding: 10px;	
 }
