@@ -60,6 +60,12 @@ body {
 
 }
 
+#container {
+	width: 992px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 header {
 	border-style: solid;
 	border-width: 10px;
@@ -96,10 +102,41 @@ section {
 	display: inline;
 }
 
+#log_in_links a:visited {
+	color: pink;
+}
+
 #log_in_links a{
 	color: #ff944d;
 	text-decoration: none;
+	  transition-property: background;
+	  transition-duration: 2s;
+	  transition-timing-function: linear;
+
+    -webkit-transition-property: background;
+       -moz-transition-property: background;
+         -o-transition-property: background;
+            transition-property: background;
+    -webkit-transition-duration: 2s;
+       -moz-transition-duration: 2s;
+         -o-transition-duration: 2s;
+            transition-duration: 2s;
+    -webkit-transition-timing-function: linear;
+       -moz-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
 }
+
+#log_in_links a:hover {
+	color: #ff5050;
+	background-color: yellow;
+	text-decoration: underline;
+}
+
+#log_in_links a:active {
+	color: black;
+}
+
 
 #menu li {
 	display: block;
@@ -110,11 +147,23 @@ section {
 	border: 1px;
 	width: 90px;
 	border-color: black;
-	background-color: #ffdd99;
+	background: linear-gradient(0deg, yellow, red);
+}
+
+#menu li:hover {
+	background: linear-gradient(0deg, red, yellow);
+}
+
+#menu li:active {
+	background: black;
 }
 
 #tag_line {
 	margin: 10px;
+}
+
+#menu a {
+	text-decoration: none;
 }
 
 ul {
@@ -157,7 +206,7 @@ section div {
 
 /* Aside */
 aside {
-	width: 35%;
+	width: 37%;
 	display: inline-block;
 	float: right;
 }
@@ -181,11 +230,16 @@ aside div {
 }
 
 .bio_block .image_block {
-	margin: 0 10px 10px 0;
-	padding: 10px;
+	margin: 0 50px 10px 50px;
+	padding: 15px;
 	background-color: #8a99a8;
 	color: white;
 	text-align: center;
+}
+
+.bio_paragraph {
+	float: left;
+	clear: left;
 }
 
 .bio_block p {
