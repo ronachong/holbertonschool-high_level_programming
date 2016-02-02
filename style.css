@@ -108,6 +108,7 @@ section {
 
 #log_in_links a{
 	color: #ff944d;
+	padding: 3px;
 	text-decoration: none;
 	  transition-property: background;
 	  transition-duration: 2s;
@@ -129,7 +130,8 @@ section {
 
 #log_in_links a:hover {
 	color: #ff5050;
-	background-color: yellow;
+	background-color: #ffdd99;
+	padding: 3px;
 	text-decoration: underline;
 }
 
@@ -137,25 +139,32 @@ section {
 	color: black;
 }
 
+#menu {
+	list-style: none;
+	margin: 0 auto;
+}
 
 #menu li {
+	position: relative;
+	left: -18%;
 	display: block;
 	margin: 10px;
 	float: right;
 	text-align: center;
-	padding: 2px;
+	padding: 5px;
 	border: 1px;
-	width: 90px;
+	border-radius: 25px;
+	width: 180px;
 	border-color: black;
-	background: linear-gradient(0deg, yellow, red);
+	background: linear-gradient(0deg, #ffdd99, #ffbb99);
 }
 
 #menu li:hover {
-	background: linear-gradient(0deg, red, yellow);
+	background: linear-gradient(0deg, #ffbb99, #ffdd99);
 }
 
 #menu li:active {
-	background: black;
+	background: #ff6666;
 }
 
 #tag_line {
@@ -164,14 +173,6 @@ section {
 
 #menu a {
 	text-decoration: none;
-}
-
-ul {
-	width: 345px;
-	background-color: blue;
-	clear: right;
-	list-style: none;
-	margin: 0 auto;
 }
 
 header {
