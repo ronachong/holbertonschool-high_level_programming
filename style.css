@@ -365,3 +365,10 @@ aside div {
 .bio_block p {
 	display: inline;
 }
+.about_block {
+	float: left;
+	clear: right;
+	padding: 10px;
+	margin: 10px;
+}
+.width: 50px;
