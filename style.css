@@ -48,8 +48,6 @@ table {
 }
 
 
-/* Header Styles */
-
 body {
 	background-color: #cc6666;
 	font-family: Arial; Geneva, sans-serif;
@@ -65,6 +63,9 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+
+/* Header Styles */
 
 header {
 	border-style: solid;
@@ -139,23 +140,37 @@ section {
 	color: black;
 }
 
+#centeredmenu {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
 #menu {
-	list-style: none;
-	margin: 0 auto;
+    clear: left;
+    float: left;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:relative;
+    left:50%;
+    text-align:center;
 }
 
 #menu li {
-	position: relative;
-	left: -18%;
-	display: block;
-	margin: 10px;
-	float: right;
+	margin: 10px;    
 	text-align: center;
 	padding: 5px;
 	border: 1px;
 	border-radius: 25px;
 	width: 180px;
 	border-color: black;
+    display:block;
+    float:left;
+    list-style:none;
+    position:relative;
+    right:50%;
 	background: linear-gradient(0deg, #ffdd99, #ffbb99);
 }
 
@@ -371,4 +386,49 @@ aside div {
 	padding: 10px;
 	margin: 10px;
 }
-.width: 50px;
+
+/* Media Queries */
+
+/* for phone screens */
+@media only screen and (max-width: 768px), {
+    #container {
+        width: 100%;
+    }
+    
+    #menu li {
+        float: none;
+    }
+    
+    section {
+        width: 100%
+    }
+    
+    aside {
+        width: 100%;
+        clear: left;
+        float: left;
+    }
+    
+    .status_img {
+        max-width: 200px;
+        width: 80%;
+    }
+    
+    .bio_block img {
+        min-width: 100px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
+
+
+}
+
+/* fixed-width styles for tablet and larger screens */
+@media only screen and (min-device-width: 992px) and (max-device-width: 1024px) {
+    body {
+        
+    }
+}
+
