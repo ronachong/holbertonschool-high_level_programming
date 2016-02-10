@@ -81,7 +81,7 @@ header {
 h1 {
 	display: inline;
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: 32px;
+	font-size: 60px;
 	position: relative;
 	bottom: 50px;
 }
@@ -407,6 +407,10 @@ aside div {
         width: 100%;
     }
     
+    h1 {
+        font-size: 16px; font-size: 8vw;
+    }
+    
     #menu li {
         float: none;
     }
@@ -462,15 +466,76 @@ aside div {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
-
-
-}
-
-/* fixed-width styles for tablet and larger screens */
-@media only screen and (min-device-width: 992px) and (max-device-width: 1024px) {
-    body {
+@media only screen and (max-width: 992px) {
+    #container {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 16px; font-size: 8vw;
+    }
+    
+    #menu li {
+        float: none;
+    }
+    
+    #loginmenu {
+        float: left;
+        width: 100%;
+        height: 30px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    #loginmenu ol {
+        clear: left;
+        float: left;
+        list-style:none;
+        margin:0;
+        padding:0;
+        position:relative;
+        left:50%;
+        text-align:center;
         
     }
-}
+    
+    #log_in_links li {
+        display: block;
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        right: 50%
+    }
+    
+    section {
+        width: 100%
+    }
+    
+    aside {
+        clear: none;
+        float: left;
+    }
+    
+    .status_img {
+        max-width: 200px;
+        width: 80%;
+    }
+    
+    .bio_block img {
+        min-width: 1px;
+        width: 100%;
+    }
+    
+    #block {
+        width: 40%;
+        float: left;
+    }
+    
+    #block2 {
+        width: 40%;
+        float: right;
+    }
 
+}
