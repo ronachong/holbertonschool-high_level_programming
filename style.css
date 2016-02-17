@@ -48,8 +48,6 @@ table {
 }
 
 
-/* Header Styles */
-
 body {
 	background-color: #cc6666;
 	font-family: Arial; Geneva, sans-serif;
@@ -66,23 +64,39 @@ body {
 	margin-right: auto;
 }
 
+
+/* Header Styles */
+
 header {
 	border-style: solid;
 	border-width: 10px;
 	border-color: #cc6666;
-	
+	display: flex;
+    flex-direction: column;
+}
+
+#header_cont {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffeee5;
+}
+
+#header_cont span {
+    display: flex;
+    flex-direction: row;
 }
 
 #logo {
+    width: 100px;
+    height: 100px;
 	margin: 15px;
 }
 
 h1 {
-	display: inline;
+    align-self: center;
+    width: 60%;
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: 32px;
-	position: relative;
-	bottom: 50px;
+	font-size: 80px;
 }
 
 section {
@@ -91,15 +105,23 @@ section {
 }
 
 #log_in_links {
-	display: block;
-	position: relative;
-	float: right;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
 	margin: 10px;
 	color: #ff944d;
 }
 
 #log_in_links li {
 	display: inline;
+}
+
+#log_in_links li:after {
+    content: "|";
+}
+
+#log_in_links li:last-child:after {
+    content: "";
 }
 
 #log_in_links a:visited {
@@ -140,22 +162,23 @@ section {
 }
 
 #menu {
-	list-style: none;
-	margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
 }
 
 #menu li {
-	position: relative;
-	left: -18%;
-	display: block;
-	margin: 10px;
-	float: right;
+	margin: 10px;    
 	text-align: center;
-	padding: 5px;
+	padding: 5px 25px;
 	border: 1px;
 	border-radius: 25px;
-	width: 180px;
 	border-color: black;
+    list-style:none;
 	background: linear-gradient(0deg, #ffdd99, #ffbb99);
 }
 
@@ -173,11 +196,6 @@ section {
 
 #menu a {
 	text-decoration: none;
-}
-
-header {
-	background-color: #ffeee5;
-	float: center;
 }
 
 /* Main Part */
@@ -371,4 +389,123 @@ aside div {
 	padding: 10px;
 	margin: 10px;
 }
-.width: 50px;
+
+/* Media Queries */
+
+/* for phone screens */
+@media only screen and (max-width: 768px), {
+    
+    #container {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 16px; font-size: 8vw;
+    }
+    
+    #menu li {
+        float: none;
+    }
+    
+    #loginmenu {
+        height: 30px;
+    }
+    
+    #loginmenu ol {
+        list-style:none;
+        margin:0;
+        padding:0;
+        text-align:center;
+        
+    }
+    
+    #log_in_links li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    section {
+        width: 100%
+    }
+    
+    aside {
+        width: 100%;
+        clear: left;
+        float: left;
+    }
+    
+    .status_img {
+        max-width: 200px;
+        width: 80%;
+    }
+    
+    .bio_block img {
+        min-width: 100px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #container {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 16px; font-size: 8vw;
+    }
+    
+    #menu li {
+    }
+    
+    #loginmenu {
+        height: 30px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    #loginmenu ol {
+        list-style:none;
+        margin:0;
+        padding:0;
+        text-align:center;
+        
+    }
+    
+    #log_in_links li {
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    section {
+        width: 100%
+    }
+    
+    aside {
+        clear: none;
+        float: left;
+    }
+    
+    .status_img {
+        max-width: 200px;
+        width: 80%;
+    }
+    
+    .bio_block img {
+        min-width: 1px;
+        width: 100%;
+    }
+    
+    #block {
+        width: 40%;
+        float: left;
+    }
+    
+    #block2 {
+        width: 40%;
+        float: left;
+    }
+
+}
