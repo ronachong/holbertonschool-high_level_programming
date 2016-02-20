@@ -430,6 +430,8 @@ aside div {
     }
     
     aside {
+        display: flex;
+        flex-wrap: wrap;
         width: 100%;
         clear: left;
         float: left;
@@ -484,8 +486,10 @@ aside div {
     }
     
     aside {
+        display: flex;
+        justify-content: center;
+        width: 100%;
         clear: none;
-        float: left;
     }
     
     .status_img {
@@ -499,13 +503,13 @@ aside div {
     }
     
     #block {
-        width: 40%;
-        float: left;
+        display: inline-block;
+        float: none;
     }
     
     #block2 {
-        width: 40%;
-        float: left;
+        display: inline-block;
+        float: none;
     }
 
 }
