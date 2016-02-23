@@ -207,8 +207,13 @@ h2 {
 }
 
 /* Main Part */
+
 section div {
 	background-color: #ffbb99;
+}
+
+textarea {
+    width: 97%;
 }
 
 .status_update {
