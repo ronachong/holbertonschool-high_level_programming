@@ -43,6 +43,18 @@
 	</header>
 
 	<section id="homepage_section">
+        
+        <h2>Post a Warble</h2>
+        
+        <form id="status_form" style="display:none;">
+            <textarea rows="4" cols="75">
+            </textarea>
+            <label><input type="checkbox">Use location?</label>
+            <button>Post</button>
+        </form>
+        
+        <a id="post_link" onclick="toggle('status_form')" href="#">Post a status</a>
+        
         <h2>User Warbles</h2>
 		<div class="status_update">
 			<div class="image_block">
@@ -109,6 +121,8 @@
 
 	</div>
 </body>
+    
+<script src="post_a_status.js"></script>
 </html>
 
 		
