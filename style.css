@@ -104,6 +104,14 @@ section {
 	width: 60%;
 }
 
+h2 {
+  text-align: center;
+  font-size: 4vw;
+  color: pink;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
 #log_in_links {
     align-self: flex-end;
     display: flex;
@@ -199,8 +207,13 @@ section {
 }
 
 /* Main Part */
+
 section div {
 	background-color: #ffbb99;
+}
+
+textarea {
+    width: 97%;
 }
 
 .status_update {
@@ -228,6 +241,8 @@ aside {
 	width: 37%;
 	display: inline-block;
 	float: right;
+    display: flex;
+    flex-direction: column;
 }
 
 aside div {
@@ -431,10 +446,24 @@ aside div {
     
     aside {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
         clear: left;
         float: left;
+    }
+    
+    #block {
+        width: 100%;
+        float: none;
+        clear: none;
+    }
+    
+    #block2 {
+        align-self: flex-end;
+        width: 100%;
+        float: none;
+        clear: none;
     }
     
     .status_img {
@@ -487,6 +516,7 @@ aside div {
     
     aside {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         width: 100%;
         clear: none;
