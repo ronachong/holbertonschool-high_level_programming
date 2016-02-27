@@ -65,6 +65,8 @@ body {
 }
 
 
+
+
 /* Header Styles */
 
 header {
@@ -100,7 +102,6 @@ h1 {
 }
 
 section {
-	float: left;
 	width: 60%;
 }
 
@@ -140,9 +141,9 @@ h2 {
 	color: #ff944d;
 	padding: 3px;
 	text-decoration: none;
-	  transition-property: background;
-	  transition-duration: 2s;
-	  transition-timing-function: linear;
+    transition-property: background;
+    transition-duration: 2s;
+    transition-timing-function: linear;
 
     -webkit-transition-property: background;
        -moz-transition-property: background;
@@ -208,6 +209,12 @@ h2 {
 
 /* Main Part */
 
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 section div {
 	background-color: #ffbb99;
 }
@@ -217,10 +224,9 @@ textarea {
 }
 
 .status_update {
-	float: left;
-	clear: right;
+    display: flex;
 	padding: 10px;
-	margin: 10px;
+	margin: 10px 10px 0px 10px;
 }
 
 .status_img {
@@ -236,11 +242,29 @@ textarea {
 	display: inline;
 }
 
+.reply_div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 10px 10px 10px;
+    padding-bottom: 20px;
+}
+
+.reply_link {
+    margin: 20px;
+    background-color: aqua;
+}
+
+.reply_form textarea {
+    width: 95%;
+}
+
+
 /* Aside */
 aside {
 	width: 37%;
 	display: inline-block;
-	float: right;
     display: flex;
     flex-direction: column;
 }
@@ -253,7 +277,7 @@ aside div {
 	float: left;
 	clear: right;
 	padding: 10px;
-	margin: 10px;
+    margin-top: 20px;
 	border-style: solid;
 	border-width: 2px;
 	border-color: #8a99a8;
@@ -407,79 +431,13 @@ aside div {
 
 /* Media Queries */
 
-/* for phone screens */
-@media only screen and (max-width: 768px), {
-    
-    #container {
-        width: 100%;
-    }
-    
-    h1 {
-        font-size: 16px; font-size: 8vw;
-    }
-    
-    #menu li {
-        float: none;
-    }
-    
-    #loginmenu {
-        height: 30px;
-    }
-    
-    #loginmenu ol {
-        list-style:none;
-        margin:0;
-        padding:0;
-        text-align:center;
-        
-    }
-    
-    #log_in_links li {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-    
-    section {
-        width: 100%
-    }
-    
-    aside {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
-        clear: left;
-        float: left;
-    }
-    
-    #block {
-        width: 100%;
-        float: none;
-        clear: none;
-    }
-    
-    #block2 {
-        align-self: flex-end;
-        width: 100%;
-        float: none;
-        clear: none;
-    }
-    
-    .status_img {
-        max-width: 200px;
-        width: 80%;
-    }
-    
-    .bio_block img {
-        min-width: 100px;
-        width: 100%;
-    }
-}
-
 @media only screen and (max-width: 992px) {
     #container {
         width: 100%;
+    }
+    
+    main {
+        flex-direction: column;
     }
     
     h1 {
@@ -517,7 +475,7 @@ aside div {
     aside {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         width: 100%;
         clear: none;
     }
@@ -535,11 +493,90 @@ aside div {
     #block {
         display: inline-block;
         float: none;
+        margin-right: 10px;
     }
     
     #block2 {
         display: inline-block;
         float: none;
+        margin-left: 10px;
+        
     }
+
+
+/* for phone screens */
+@media only screen and (max-width: 768px), {
+    
+    #container {
+        width: 100%;
+    }
+    
+    main {
+        flex-direction: column;
+    }
+    
+    h1 {
+        font-size: 16px; font-size: 8vw;
+    }
+    
+    #menu li {
+        float: none;
+    }
+    
+    #loginmenu {
+        height: 30px;
+    }
+    
+    #loginmenu ol {
+        list-style:none;
+        margin:0;
+        padding:0;
+        text-align:center;
+        
+    }
+    
+    #log_in_links li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    section {
+        width: 100%
+    }
+    
+    aside {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .bio_block {
+        clear: none;
+    }
+    
+    #block {
+        flex: 1 auto;
+        margin-right: 0px;
+    }
+    
+    #block2 {
+        flex: 1 auto;
+        margin-left: 0px;
+    }
+    
+    .status_img {
+        max-width: 200px;
+        width: 80%;
+    }
+    
+    .bio_block img {
+        min-width: 100px;
+        width: 100%;
+    }
+}
+
 
 }
