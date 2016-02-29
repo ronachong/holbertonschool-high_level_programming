@@ -2,13 +2,21 @@
 //    document.getElementById('status_form').style.display = 'none';
 //    document.getElementById('post_link').style.display = 'block';
 //};
-   
-function toggle(id) {
-    if (document.getElementById('status_form').style.display == 'none') {
-        document.getElementById('status_form').style.display = 'block';
-    } else {
-        document.getElementById('status_form').style.display = 'none';
-    }
+
+
+
+window.onload = function () {
+    var status_form = document.getElementById('status_form');
+    var post_link = document.getElementById('post_link');
+
+
+    post_link.onclick = function toggle_status() {
+        if (status_form.style.display == 'none') {
+            status_form.style.display = 'block';
+        } else {
+            status_form.style.display = 'none';
+        }
+    };
 };
 
 //document.getElementById('post_link').onclick = function () {
