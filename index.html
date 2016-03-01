@@ -16,6 +16,7 @@
     
     <script src="post_a_status.js"></script>
     <script src="reply.js"></script>
+    <script src="addLoadEvent.js"></script>
 </head>
 
 <body>
@@ -71,13 +72,13 @@
                     <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     </div>
                     <div class="reply_div">
-                        <form class="reply_form" id="reply_1" style="display:none;">
+                        <form class="reply_form" id="reply_1">
                             <textarea rows="4" cols="75">
                             </textarea>
                             <label><input type="checkbox">Use location?</label>
                             <button>Post</button>
                         </form>
-                        <a class="reply_link" onclick="toggle_reply('reply_1')" href="#/">Post a reply</a>
+                        <a class="reply_link" data-form_no="reply_1" href="#">Post a reply</a>
                     </div>
                 <br/>
 
@@ -99,7 +100,7 @@
                         <label><input type="checkbox">Use location?</label>
                         <button>Post</button>
                     </form>
-                    <a class="reply_link" onclick="toggle_reply('reply_2')" href="#/">Post a reply</a>
+                    <a class="reply_link" data-form_no="reply_2" href="#/">Post a reply</a>
                     </div>
                 <br/>
 
@@ -120,7 +121,7 @@
                         <label><input type="checkbox">Use location?</label>
                         <button>Post</button>
                     </form>
-                    <a class="reply_link" onclick="toggle_reply('reply_3')" href="#/">Post a reply</a>
+                    <a class="reply_link" data-form_no="reply_3" href="#/">Post a reply</a>
                     </div>
 
             </section>
