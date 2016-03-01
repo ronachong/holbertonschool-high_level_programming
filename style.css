@@ -256,6 +256,10 @@ textarea {
     background-color: aqua;
 }
 
+.reply_form {
+    display: none;
+}
+
 .reply_form textarea {
     width: 95%;
 }
