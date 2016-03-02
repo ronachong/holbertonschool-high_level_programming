@@ -242,6 +242,10 @@ textarea {
 	display: inline;
 }
 
+#status_form {
+    display: none;
+}
+
 .reply_div {
     display: flex;
     flex-direction: column;
