@@ -257,8 +257,7 @@ textarea {
 }
 
 .reply_link {
-    margin: 20px;
-    background-color: aqua;
+    margin-bottom: 20px;
 }
 
 .reply_form {
