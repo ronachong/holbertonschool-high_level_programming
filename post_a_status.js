@@ -4,11 +4,14 @@ window.onload = function toggle_status(){
 
 
     post_link.onclick = function () {
+        
+        status_form.toggle();
+/*        
         if (status_form.style.display == 'none') {
             status_form.style.display = 'block';
         } else {
             status_form.style.display = 'none';
-        }
+        } */
     };
 
 }

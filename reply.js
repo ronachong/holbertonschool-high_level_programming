@@ -7,12 +7,17 @@ function toggle_reply() {
         reply_links_array[i].addEventListener("click", function () {
             reply_id = this.getAttribute("data-form_no");
             reply_form = document.getElementById(reply_id);
-            if (reply_form.style.display == "none" || reply_form.style.display == "") {
-                reply_form.style.display = 'block';
-                this.style.display = "none"; //this is still the reply link
+            reply_form.toggle();
+            this.style.display = "none"; //this is still the reply link
+            
+            
+           /* if (reply_form.style.display == "none" || reply_form.style.display == "") {
+                reply_form.style.display = "block";
+                
+            this.style.display = "none"; //this is still the reply link
             }
+            */
         })                                    
     }
 }
-
 document.addEventListener("DOMContentLoaded", toggle_reply);
