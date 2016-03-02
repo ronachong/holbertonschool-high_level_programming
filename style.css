@@ -240,6 +240,7 @@ textarea {
 
 .status_update p {
 	display: inline;
+    margin: 10px;
 }
 
 #status_form {
@@ -252,7 +253,7 @@ textarea {
     flex-wrap: wrap;
     justify-content: center;
     margin: 0px 10px 10px 10px;
-    padding-bottom: 20px;
+    padding: 10px 10px 20px 30px;
 }
 
 .reply_link {
@@ -262,6 +263,10 @@ textarea {
 
 .reply_form {
     display: none;
+}
+
+.reply_div label {
+    display: block;
 }
 
 .reply_form textarea {
