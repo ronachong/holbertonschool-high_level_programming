@@ -1,8 +1,6 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
+/***************** http://meyerweb.com/eric/tools/css/reset/ ******************
+****************** v2.0 | 20110126 License: none (public domain)   ************/
+   
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -65,9 +63,20 @@ body {
 }
 
 
+/****************** Button Styling ******************/
+.button {
+    margin: 10px;    
+	text-align: center;
+	padding: 5px 25px;
+	border: 1px;
+	border-radius: 25px;
+	border-color: black;
+    list-style:none;
+	background: linear-gradient(0deg, #ddeeaa, #ffcc99);
+}
 
 
-/* Header Styles */
+/******************* Header Styles *******************/
 
 header {
 	border-style: solid;
@@ -95,22 +104,13 @@ header {
 }
 
 h1 {
-    align-self: center;
     width: 60%;
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 80px;
 }
 
-section {
-	width: 60%;
-}
-
-h2 {
-  text-align: center;
-  font-size: 4vw;
-  color: pink;
-  padding-top: 20px;
-  padding-bottom: 10px;
+#tag_line {
+	margin: 10px;
 }
 
 #log_in_links {
@@ -199,15 +199,12 @@ h2 {
 	background: #ff6666;
 }
 
-#tag_line {
-	margin: 10px;
-}
-
 #menu a {
 	text-decoration: none;
 }
 
-/* Main Part */
+
+/****************** Main Part *********************/
 
 main {
     display: flex;
@@ -215,8 +212,25 @@ main {
     justify-content: space-between;
 }
 
+section {
+	width: 60%;
+}
+
 section div {
 	background-color: #ffbb99;
+}
+
+h2 {
+  text-align: center;
+  font-size: 4vw;
+  color: pink;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#post_link {
+    display: flex;
+    justify-content: center;
 }
 
 textarea {
@@ -230,16 +244,15 @@ textarea {
 }
 
 .status_img {
-	padding-right: 10px;
 	width: 200px;
 }
 
 .image_block {
-	float: left;
+    margin: 5px 20px 0 10px;
 }
 
 .status_update p {
-	display: inline;
+	display: inline-block;
     margin: 10px;
 }
 
@@ -257,6 +270,7 @@ textarea {
 }
 
 .reply_link {
+    text-align: center;
     margin-bottom: 20px;
 }
 
