@@ -53,7 +53,6 @@ body {
 	border-style: solid;
 	border-width: 15px;
 	border-color: #cc6666;
-
 }
 
 #container {
@@ -88,6 +87,7 @@ Thank you @chriscoyier !
   -ms-flex: 1;           /* IE 10 */
   flex: 1;               /* NEW, Spec - Firefox, Chrome, Opera */
 }
+
 
 /****************** Button Styling ******************/
 .button {
@@ -225,7 +225,7 @@ h1 {
 }
 
 
-/****************** Main Part *********************/
+/****************** Main Styles *********************/
 
 main {
     display: flex;
@@ -312,8 +312,7 @@ textarea {
     width: 95%;
 }
 
-
-/* Aside */
+/****************** Aside Styles *********************/
 aside {
 	width: 37%;
 	display: inline-block;
@@ -349,7 +348,7 @@ aside div {
 	padding-bottom: 20px;
 }
 
-/* Footer */
+/****************** Footer Styles *********************/
 #footer_msg {
 	position: fixed;
 	bottom: 0;
@@ -414,7 +413,7 @@ aside div {
 	padding-bottom: 10px;
 }
 
-/* List of All Users Styles */
+/****************** Styles for List of All Users Page *********************/
 
 .loau_block {
 	float: left;
@@ -452,13 +451,6 @@ aside div {
 	padding-bottom: 20px;
 }
 
-.bio_block {
-	float: left;
-}
-
-.bio_block p {
-	display: inline;
-}
 .about_block {
 	float: left;
 	clear: right;
@@ -466,7 +458,7 @@ aside div {
 	margin: 10px;
 }
 
-/* Media Queries */
+/****************** Media Queries *********************/
 
 @media only screen and (max-width: 992px) {
     #container {
@@ -494,8 +486,7 @@ aside div {
         list-style:none;
         margin:0;
         padding:0;
-        text-align:center;
-        
+        text-align:center;  
     }
     
     #log_in_links li {
@@ -537,7 +528,6 @@ aside div {
         display: inline-block;
         float: none;
         margin-left: 10px;
-        
     }
 
 
@@ -568,8 +558,7 @@ aside div {
         list-style:none;
         margin:0;
         padding:0;
-        text-align:center;
-        
+        text-align:center;   
     }
     
     #log_in_links li {
@@ -613,7 +602,4 @@ aside div {
         min-width: 100px;
         width: 100%;
     }
-}
-
-
 }
