@@ -90,6 +90,7 @@ Thank you @chriscoyier !
 
 
 /****************** Button Styling ******************/
+
 .button {
     margin: 10px;    
 	text-align: center;
@@ -313,6 +314,7 @@ textarea {
 }
 
 /****************** Aside Styles *********************/
+
 aside {
 	width: 37%;
 	display: inline-block;
@@ -349,6 +351,7 @@ aside div {
 }
 
 /****************** Footer Styles *********************/
+
 #footer_msg {
 	position: fixed;
 	bottom: 0;
@@ -366,6 +369,7 @@ aside div {
 	font-size: 22px;
 }
 
+/****************** Styles for List of User Profile Page *********************/
 
 .profile_bio {
 	float: left;
