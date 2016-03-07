@@ -2,35 +2,45 @@
 
 <html lang="en">
     <head>
+        <!-- Meta -->
         <meta charset="utf-8">
-
         <title>impossible octopus fitness</title>
         <meta name="description" content="impossible octopus fitness">
         <meta name="Kris and Rona" content="impossible octopus fitness">
         <meta name="viewport" content="width=760, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css">
 
+        <!-- Style Reference -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <!-- Javascript -->
         <script src="post_a_status.js"></script>
         <script src="reply.js"></script>
         <script src="addLoadEvent.js"></script>
         <script src="toggle.js"></script>
     </head>
 
+    
     <body>
         <div id="container">
+            
+            <!------ HEADER ------>
             <header>
+                
+                <!-- actual header -->
                 <div id="header_block">
                         <img id="logo" width="100" src="http://www.procliparts.com/cliparts/pele/ekiE9gTAo-orange-bird.png" alt="log">
                         <h1>Warbler</h1>
                         <p id="tag_line">Home of impossible octopus fitness.</p>
 
                 </div>
-
+                
+                <!-- login/logout links-->
                 <ol id="log_in_links">
                     <li><a href="">Edit my profile</a></li>
                     <li><a href="twitter_log_out.html">Logout</a></li>
                 </ol>
-
+                
+                <!-- navigation menu -->
                 <div id="centeredmenu">
                     <ul id="menu">
                         <li><a href="impossible_octopus_fitness.html">About</a></li>
@@ -40,12 +50,16 @@
                 </div>
 
             </header>
-
+            
+            
+            <!------ MAIN ------>
             <main>
+                
+                <!-- section for user statuses -->
                 <section id="homepage_section">
-
+                    
+                    <!-- post status form -->
                     <h2>Post a Warble</h2>
-
                     <form id="status_form">
                         <textarea rows="4" cols="75">
                         </textarea>
@@ -55,6 +69,7 @@
 
                     <a class="button" id="post_link" href="#/">Post a status</a>
 
+                    <!-- status updates -->
                     <h2>User Warbles</h2>
                     <div class="status_update">
                         <div class="image_block">
@@ -114,6 +129,8 @@
                         </div>
                 </section>
 
+                
+                <!-- aside for user bios -->
                 <aside>
                     <div class="bio_block" id="block">
                         <div class="image_block">
@@ -139,6 +156,7 @@
                 </aside>
             </main>
 
+            <!------ FOOTER ------>
             <footer>
                 <p id="footer_msg">Welcome users! Our application is in beta.</p>
             </footer>
