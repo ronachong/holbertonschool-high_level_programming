@@ -103,6 +103,12 @@ Thank you @chriscoyier !
 }
 
 
+/******************* Text Styling ********************/
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+}
+
 /******************* Header Styles *******************/
 
 header {
@@ -127,7 +133,7 @@ header {
 }
 
 h1 {
-	font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Gochi Hand', cursive;
 	font-size: 80px;
 }
 
@@ -243,6 +249,7 @@ section div {
 }
 
 h2 {
+  font-family: 'Gochi Hand', cursive;
   text-align: center;
   font-size: 4vw;
   color: pink;
@@ -253,6 +260,7 @@ h2 {
 #post_link {
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
 }
 
 textarea {
