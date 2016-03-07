@@ -114,13 +114,10 @@ header {
 
 #header_cont {
     display: flex;
-    flex-direction: column;
-    background-color: #ffeee5;
-}
-
-#header_cont span {
-    display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: #ffeee5;
 }
 
 #logo {
@@ -131,12 +128,13 @@ header {
 
 h1 {
     width: 60%;
+    margin-left: 15px;
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 80px;
 }
 
 #tag_line {
-	margin: 10px;
+	margin: 10px 10px 10px 15px;
 }
 
 #log_in_links {
