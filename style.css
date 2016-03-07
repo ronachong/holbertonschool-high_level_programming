@@ -279,6 +279,10 @@ textarea {
     margin: 5px 30px 0 10px;
 }
 
+.image_block img {
+    margin-bottom: 10px;
+}
+
 .status_update p {
     margin: 10px;
 }
