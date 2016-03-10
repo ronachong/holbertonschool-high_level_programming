@@ -244,7 +244,7 @@ section {
 	width: 60%;
 }
 
-section div {
+section div.orange {
 	background-color: #ffbb99;
 }
 
@@ -608,4 +608,12 @@ aside div {
         min-width: 100px;
         width: 100%;
     }
+}
+} /* not sure what this bracket is for... 
+/****************** Map Styling *********************/
+
+#mapContainer {
+    width: 640px;
+    height: 480px;
+    background-color: none;
 }
