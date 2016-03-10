@@ -13,7 +13,8 @@
 
 
         <link rel="stylesheet" type="text/css" href="style.css">
-
+        
+        <!-- Javascript Modules for HERE -->
         <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js"
                 type="text/javascript" charset="utf-8"></script>
         <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js"
@@ -42,16 +43,19 @@
             </header>
             <section id="log_out">
                 <h2>About impossible octopus fitness</h2>
-                <div class="about_block">
+                <div class="about_block orange">
                     <div class="image_block">
                         <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" />
                         <br>
                         <br>
                         <p>This is Impossible Octopus Fitness</p>
-
                     </div>
-                    <p class="about_paragraph">This is not a site about impossible octopus fitness, although that would be pretty cool. This site is a project done for Holberton School in San Francisco. The goal of this portion of the project is to start understanding the complexity of SEO (search engine optimization). We will be tested at the end of the project on how easily the pharse "impossible octopus fitness" is found on the web.</p>
+                    <p class="about_paragraph">This is not a site about impossible octopus fitness, although that would be pretty cool. This site is a project done for Holberton School in San Francisco. The goal of this portion of the project is to start understanding the complexity of SEO (search engine optimization). We will be tested at the end of the project on how easily the phrase "impossible octopus fitness" is found on the web.</p>
+                </div>
+                <div id="mapContainer">
+                    <script src="here_object.js" charset="utf-8"></script>
                 </div>
             </section>
+
         </div>
     </body>
