@@ -1,3 +1,7 @@
+// Add window resize listener to adjust the map dimensions.
+window.addEventListener('resize', function() {
+    map.getViewPort().resize();
+});
 // Initialize the platform object:
 var platform = new H.service.Platform({
     'app_id': 'BErGSfkWWcdKvQrOCfsw',
@@ -12,6 +16,7 @@ var map = new H.Map(
     document.getElementById('mapContainer'),
     defaultLayers.normal.map,
     {
-        zoom: 10,
-        center: { lat: 52.5, lng: 13.4 }
+        zoom: 16,
+        center: { lng: -122.40028, lat: 37.7920807 }
     });
+
