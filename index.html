@@ -1,163 +1,184 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <title>impossible octopus fitness</title>
+        <meta name="description" content="impossible octopus fitness">
+        <meta name="Kris and Rona" content="impossible octopus fitness">
+        <meta name="viewport" content="width=760, initial-scale=1.0">
 
-  <title>impossible octopus fitness</title>
-  <meta name="description" content="impossible octopus fitness">
-  <meta name="Kris and Rona" content="impossible octopus fitness">
-  <meta name="viewport" content="width=760, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Style References -->
+        <link href='https://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <!-- Javascript -->
+        <script src="post_a_status.js"></script>
+        <script src="reply.js"></script>
+        <script src="addLoadEvent.js"></script>
+        <script src="toggle.js"></script>
+    </head>
 
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
     
-    <script src="post_a_status.js"></script>
-    <script src="reply.js"></script>
-    <script src="addLoadEvent.js"></script>
-    <script src="toggle.js"></script>
-</head>
+    <body>
+        <div id="container">
+            
+            <!------ HEADER ------>
+            <header>
+                
+                <!-- actual header -->
+                <div id="header_block">
+                        <img id="logo" width="100" src="http://www.procliparts.com/cliparts/pele/ekiE9gTAo-orange-bird.png" alt="log">
+                        <h1>Warbler</h1>
+                        <p id="tag_line">Home of Impossible Octopus Fitness.</p>
 
-<body>
-	<div id="container">
-        <header>
-            <div id="header_cont">
-                <div id="logo_cont">
-                <img id="logo" width="100" src="http://www.procliparts.com/cliparts/pele/ekiE9gTAo-orange-bird.png" alt="log">
-                <h1>Warbler</h1>
                 </div>
-                <p id="tag_line">Home of impossible octopus fitness.</p>
-
-            </div>
-
-            <ol id="log_in_links">
-                <li><a href="">Edit my profile</a></li>
-                <li><a href="twitter_log_out.html">Logout</a></li>
-            </ol>
-
-            <div id="centeredmenu">
-                <ul id="menu">
-                    <li><a href="impossible_octopus_fitness.html">About</a></li>
-                    <li><a href="twitter_profile.html">My Statuses</a></li>
-                    <li><a href="twitter_list.html">All Users</a></li>
-                </ul>
-            </div>
-
-        </header>
-
-        <main>
-            <section id="homepage_section">
-
-                <h2>Post a Warble</h2>
-
-                <form id="status_form">
-                    <textarea rows="4" cols="75">
-                    </textarea>
-                    <label><input type="checkbox">Use location?</label>
-                    <button>Post</button>
-                </form>
-
-                <a class="button" id="post_link" href="#/">Post a status</a>
-
-                <h2>User Warbles</h2>
-                <div class="status_update">
-                    <div class="image_block">
-                        <img alt="logo" class="status_img" src="https://holbertonintranet.s3.amazonaws.com/users/photos/000/000/034/thumb/image.png?1452813921" />
-                        <br>
-                        Kris Bredemeier
-                        <br>
-                        1/31/2016
-                    </div>
-                    <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                    </div>
-                    <div class="reply_div">
-                        <form class="reply_form" id="reply_1">
-                            <textarea rows="4" cols="75">
-                            </textarea>
-                            <label><input type="checkbox">Use location?</label>
-                            <button>Post</button>
-                        </form>
-                        <a class="reply_link button" data-form_no="reply_1" href="#/">Post a reply</a>
-                    </div>
-                <br/>
-
-
-                <div class="status_update">
-                    <div class="image_block">
-                        <img alt="image of user" class="status_img" src="https://holbertonintranet.s3.amazonaws.com/users/photos/000/000/020/thumb/rona_square_img.JPG?1453083037" />
-                        <br>
-                        Rona Chong
-                        <br>
-                        2/02/2016
-                    </div>
-                    <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                
+                <!-- login/logout links-->
+                <ol id="log_in_links">
+                    <li><a href="">Edit my profile</a></li>
+                    <li><a href="twitter_log_out.html">Logout</a></li>
+                </ol>
+                
+                <!-- navigation menu -->
+                <div id="centeredmenu">
+                    <ul id="menu">
+                        <li><a href="impossible_octopus_fitness.html">About</a></li>
+                        <li><a href="twitter_profile.html">My Statuses</a></li>
+                        <li><a href="twitter_list.html">All Users</a></li>
+                    </ul>
                 </div>
-                    <div class="reply_div">
-                    <form class="reply_form" id="reply_2">
+
+            </header>
+            
+            
+            <!------ MAIN ------>
+            <main>
+                
+                <!----- section for user statuses ----->
+                <section id="homepage_section">
+                    
+                    <!----- post status form ----->
+                    <h2>Post a Warble</h2>
+                    <form id="status_form">
                         <textarea rows="4" cols="75">
                         </textarea>
                         <label><input type="checkbox">Use location?</label>
                         <button>Post</button>
                     </form>
-                    <a class="reply_link button" data-form_no="reply_2" href="#/">Post a reply</a>
+
+                    <a class="button" id="post_link" href="#/">Post a status</a>
+
+                    <!----- status updates ----->
+                    <h2>User Warbles</h2>
+                    
+                    <!--block 1-->
+                    <div class="status_update orange">
+                        <div class="image_block">
+                            <img alt="logo" class="status_img" src="https://holbertonintranet.s3.amazonaws.com/users/photos/000/000/034/thumb/image.png?1452813921" />
+                            <h6>Kris Bredemeier</h6>
+                            <h6>1/31/2016</h6>
+                        </div>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        </p>
+                        </div>
+                        <div class="reply_div orange">
+                            <form class="reply_form" id="reply_1">
+                                <textarea rows="4" cols="75">
+                                </textarea>
+                                <label><input type="checkbox">Use location?</label>
+                                <button>Post</button>
+                            </form>
+                            <a class="reply_link button" data-form_no="reply_1" href="#/">Post a reply</a>
+                        </div>
+                    <br/>
+
+                    <!--block 2-->
+                    <div class="status_update orange">
+                        <div class="image_block">
+                            <img alt="image of user" class="status_img" src="https://holbertonintranet.s3.amazonaws.com/users/photos/000/000/020/thumb/rona_square_img.JPG?1453083037" />
+                            <h6>Rona Chong</h6>
+                            <h6>2/02/2016</h6>
+                        </div>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        </p>
                     </div>
-                <br/>
+                        <div class="reply_div orange">
+                            <form class="reply_form" id="reply_2">
+                                <textarea rows="4" cols="75">
+                                </textarea>
+                                <label><input type="checkbox">Use location?</label>
+                                <button>Post</button>
+                            </form>
+                            <a class="reply_link button" data-form_no="reply_2" href="#/">Post a reply</a>
+                        </div>
+                    <br/>
 
-                <div class="status_update">
-                    <div class="image_block">
-                        <img alt="image of user" class="status_img" src="https://www.holbertonschool.com/assets/portraits/rudy-4304612245b36c56ac72cdd28ad0cf8a9d028ef61478ac87aaabe068da940a56.jpg" />
-                        <br>
-                        Rudy Rigot
-                        <br>
-                        4/24/2420
+                    <!--block 3-->
+                    <div class="status_update orange">
+                        <div class="image_block">
+                            <img alt="image of user" class="status_img" src="https://www.holbertonschool.com/assets/portraits/rudy-4304612245b36c56ac72cdd28ad0cf8a9d028ef61478ac87aaabe068da940a56.jpg" />
+                            <h6>Rudy Rigot</h6>
+                            <h6>4/24/2420</h6>
+                        </div>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
                     </div>
-                    <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                    <div class="reply_div">
-                    <form class="reply_form" id="reply_3">
-                        <textarea rows="4" cols="75">
-                        </textarea>
-                        <label><input type="checkbox">Use location?</label>
-                        <button>Post</button>
-                    </form>
-                    <a class="reply_link button" data-form_no="reply_3" href="#/">Post a reply</a>
+                        <div class="reply_div orange">
+                            <form class="reply_form" id="reply_3">
+                                <textarea rows="4" cols="75">
+                                </textarea>
+                                <label><input type="checkbox">Use location?</label>
+                                <button>Post</button>
+                            </form>
+                            <a class="reply_link button" data-form_no="reply_3" href="#/">Post a reply</a>
+                        </div>
+                </section>
+
+                
+                <!----- aside for user bios ----->
+                <aside>
+                    
+                    <!--block 1-->
+                    <div class="bio_block" id="block">
+                        <div class="image_block">
+                            <img alt="image of featured user" src="https://www.holbertonschool.com/assets/portraits/sylvain-77f70e45719e3f1f0fbbc97f7bb8ef02b8361bd640a5747b200a1c87c9813b2a.jpg" />
+                            <br>
+                            <br>
+                            <p>Mr. Smiley</p>
+                        </div>
+                        <p class="bio_paragraph">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
                     </div>
-
-            </section>
-
-            <aside>
-                <div class="bio_block" id="block">
-                    <div class="image_block">
-                        <img alt="image of featured user" src="https://www.holbertonschool.com/assets/portraits/sylvain-77f70e45719e3f1f0fbbc97f7bb8ef02b8361bd640a5747b200a1c87c9813b2a.jpg" />
-                        <br>
-                        <br>
-                        <p>Mr. Smiley</p>
-
+                    
+                    <!--block 2-->
+                    <div class="bio_block" id="block2">
+                        <div class="image_block">
+                            <img alt="image of featured user" src="https://www.holbertonschool.com/assets/portraits/julien-3ecadbba47cb3d2d3491ef5bdc9a2f36774a42caf310cbef659435c622fba03c.jpg" />
+                            <br>
+                            <br>
+                            <p>The Marketing Guy</p>
+                        </div>
+                        <p class="bio_paragraph">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
                     </div>
-                    <p class="bio_paragraph"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
+                </aside>
+            </main>
 
-                <div class="bio_block" id="block2">
-                    <div class="image_block">
-                        <img alt="image of featured user" src="https://www.holbertonschool.com/assets/portraits/julien-3ecadbba47cb3d2d3491ef5bdc9a2f36774a42caf310cbef659435c622fba03c.jpg" />
-                        <br>
-                        <br>
-                        <p>The Marketing Guy</p>
+            <!------ FOOTER ------>
+            <footer>
+                <p id="footer_msg">Welcome users! Our application is in beta.</p>
+            </footer>
 
-                    </div>
-                    <p class="bio_paragraph"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </aside>
-        </main>
-
-	<footer>
-		<p id="footer_msg">Welcome users! Our application is in beta.</p>
-	</footer>
-
-	</div>
-</body>
+        </div>
+    </body>
 </html>
 
 		

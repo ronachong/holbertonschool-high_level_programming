@@ -53,7 +53,6 @@ body {
 	border-style: solid;
 	border-width: 15px;
 	border-color: #cc6666;
-
 }
 
 #container {
@@ -63,9 +62,37 @@ body {
 }
 
 
+/****************** Prefixes for Browsers ******************/
+/* 
+Here be dragons! Lots of (syntax) changes
+Read: http://css-tricks.com/old-flexbox-and-new-flexbox/
+
+Mixing both old- and new syntax http://css-tricks.com/using-flexbox/
+
+Thank you @chriscoyier !
+*/
+
+.page-wrap {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+.main-nav,
+.main-sidebar {
+  -webkit-box-flex: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
+  width: 20%;            /* For old syntax, otherwise collapses. */
+  -webkit-flex: 1;       /* Safari 6.1+. iOS 7.1+, BB10 */
+  -ms-flex: 1;           /* IE 10 */
+  flex: 1;               /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+
 /****************** Button Styling ******************/
+
 .button {
-    margin: 10px;    
+    margin: 10px 20px;    
 	text-align: center;
 	padding: 5px 25px;
 	border: 1px;
@@ -76,41 +103,42 @@ body {
 }
 
 
+/******************* Text Styling ********************/
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+}
+
 /******************* Header Styles *******************/
 
 header {
-	border-style: solid;
-	border-width: 10px;
-	border-color: #cc6666;
 	display: flex;
     flex-direction: column;
+    margin-bottom: 0 10px 40px 10px;
 }
 
-#header_cont {
+#header_block {
     display: flex;
     flex-direction: column;
+    align-content: center;
+    text-align: center;
     background-color: #ffeee5;
-}
-
-#header_cont span {
-    display: flex;
-    flex-direction: row;
+    margin: 17px 10px 3px 10px;
 }
 
 #logo {
     width: 100px;
     height: 100px;
-	margin: 15px;
+	margin: 15px auto;
 }
 
 h1 {
-    width: 60%;
-	font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Gochi Hand', cursive;
 	font-size: 80px;
 }
 
 #tag_line {
-	margin: 10px;
+	margin: 10px 10px 10px 15px;
 }
 
 #log_in_links {
@@ -204,7 +232,7 @@ h1 {
 }
 
 
-/****************** Main Part *********************/
+/****************** Main Styles *********************/
 
 main {
     display: flex;
@@ -216,11 +244,12 @@ section {
 	width: 60%;
 }
 
-section div {
+section div.orange {
 	background-color: #ffbb99;
 }
 
 h2 {
+  font-family: 'Gochi Hand', cursive;
   text-align: center;
   font-size: 4vw;
   color: pink;
@@ -231,6 +260,7 @@ h2 {
 #post_link {
     display: flex;
     justify-content: center;
+    margin: 0 50px 40px 50px;
 }
 
 textarea {
@@ -248,11 +278,16 @@ textarea {
 }
 
 .image_block {
-    margin: 5px 20px 0 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 30px 0 10px;
+}
+
+.image_block img {
+    margin-bottom: 10px;
 }
 
 .status_update p {
-	display: inline-block;
     margin: 10px;
 }
 
@@ -286,8 +321,8 @@ textarea {
     width: 95%;
 }
 
+/****************** Aside Styles *********************/
 
-/* Aside */
 aside {
 	width: 37%;
 	display: inline-block;
@@ -300,8 +335,6 @@ aside div {
 }
 
 .bio_block {
-	float: left;
-	clear: right;
 	padding: 10px;
     margin-top: 20px;
 	border-style: solid;
@@ -321,24 +354,12 @@ aside div {
 	text-align: center;
 }
 
-.bio_paragraph {
-	float: left;
-	clear: left;
-}
-
 .bio_block p {
 	padding-bottom: 20px;
 }
 
-.bio_block {
-	float: left;
-}
+/****************** Footer Styles *********************/
 
-.bio_block p {
-	display: inline;
-}
-
-/* Footer */
 #footer_msg {
 	position: fixed;
 	bottom: 0;
@@ -356,6 +377,7 @@ aside div {
 	font-size: 22px;
 }
 
+/****************** Styles for List of User Profile Page *********************/
 
 .profile_bio {
 	float: left;
@@ -403,7 +425,7 @@ aside div {
 	padding-bottom: 10px;
 }
 
-/* List of All Users Styles */
+/****************** Styles for List of All Users Page *********************/
 
 .loau_block {
 	float: left;
@@ -441,13 +463,6 @@ aside div {
 	padding-bottom: 20px;
 }
 
-.bio_block {
-	float: left;
-}
-
-.bio_block p {
-	display: inline;
-}
 .about_block {
 	float: left;
 	clear: right;
@@ -455,7 +470,7 @@ aside div {
 	margin: 10px;
 }
 
-/* Media Queries */
+/****************** Media Queries *********************/
 
 @media only screen and (max-width: 992px) {
     #container {
@@ -483,8 +498,7 @@ aside div {
         list-style:none;
         margin:0;
         padding:0;
-        text-align:center;
-        
+        text-align:center;  
     }
     
     #log_in_links li {
@@ -518,15 +532,12 @@ aside div {
     
     #block {
         display: inline-block;
-        float: none;
         margin-right: 10px;
     }
     
     #block2 {
         display: inline-block;
-        float: none;
         margin-left: 10px;
-        
     }
 
 
@@ -545,10 +556,6 @@ aside div {
         font-size: 16px; font-size: 8vw;
     }
     
-    #menu li {
-        float: none;
-    }
-    
     #loginmenu {
         height: 30px;
     }
@@ -557,8 +564,7 @@ aside div {
         list-style:none;
         margin:0;
         padding:0;
-        text-align:center;
-        
+        text-align:center;   
     }
     
     #log_in_links li {
@@ -603,6 +609,11 @@ aside div {
         width: 100%;
     }
 }
+} /* not sure what this bracket is for... 
+/****************** Map Styling *********************/
 
-
+#mapContainer {
+    width: 640px;
+    height: 480px;
+    background-color: none;
 }
