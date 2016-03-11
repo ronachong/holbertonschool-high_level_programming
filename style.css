@@ -613,7 +613,8 @@ aside div {
 /****************** Map Styling *********************/
 
 #mapContainer {
-    width: 640px;
-    height: 480px;
+    width: 2000px;
+    height: 1800px;
+    margin: 0 auto;
     background-color: none;
 }
