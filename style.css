@@ -1,6 +1,6 @@
 /***************** http://meyerweb.com/eric/tools/css/reset/ ******************
 ****************** v2.0 | 20110126 License: none (public domain)   ************/
-   
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -10,8 +10,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -22,7 +22,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -63,7 +63,7 @@ body {
 
 
 /****************** Prefixes for Browsers ******************/
-/* 
+/*
 Here be dragons! Lots of (syntax) changes
 Read: http://css-tricks.com/old-flexbox-and-new-flexbox/
 
@@ -92,7 +92,7 @@ Thank you @chriscoyier !
 /****************** Button Styling ******************/
 
 .button {
-    margin: 10px 20px;    
+    margin: 10px 20px;
 	text-align: center;
 	padding: 5px 25px;
 	border: 1px;
@@ -209,7 +209,7 @@ h1 {
 }
 
 #menu li {
-	margin: 10px;    
+	margin: 10px;
 	text-align: center;
 	padding: 5px 25px;
 	border: 1px;
@@ -366,7 +366,7 @@ aside div {
 	right: 0;
 	color: white;
 	background-color: #ff944d;
-	padding: 10px;	
+	padding: 10px;
 }
 
 #log_out {
@@ -476,42 +476,42 @@ aside div {
     #container {
         width: 100%;
     }
-    
+
     main {
         flex-direction: column;
     }
-    
+
     h1 {
         font-size: 16px; font-size: 8vw;
     }
-    
+
     #menu li {
     }
-    
+
     #loginmenu {
         height: 30px;
         overflow: hidden;
         position: relative;
     }
-    
+
     #loginmenu ol {
         list-style:none;
         margin:0;
         padding:0;
-        text-align:center;  
+        text-align:center;
     }
-    
+
     #log_in_links li {
         display: block;
         list-style: none;
         margin: 0;
         padding: 0;
     }
-    
+
     section {
         width: 100%
     }
-    
+
     aside {
         display: flex;
         flex-direction: row;
@@ -519,22 +519,22 @@ aside div {
         width: 100%;
         clear: none;
     }
-    
+
     .status_img {
         max-width: 200px;
         width: 80%;
     }
-    
+
     .bio_block img {
         min-width: 1px;
         width: 100%;
     }
-    
+
     #block {
         display: inline-block;
         margin-right: 10px;
     }
-    
+
     #block2 {
         display: inline-block;
         margin-left: 10px;
@@ -543,40 +543,40 @@ aside div {
 
 /* for phone screens */
 @media only screen and (max-width: 768px), {
-    
+
     #container {
         width: 100%;
     }
-    
+
     main {
         flex-direction: column;
     }
-    
+
     h1 {
         font-size: 16px; font-size: 8vw;
     }
-    
+
     #loginmenu {
         height: 30px;
     }
-    
+
     #loginmenu ol {
         list-style:none;
         margin:0;
         padding:0;
-        text-align:center;   
+        text-align:center;
     }
-    
+
     #log_in_links li {
         list-style: none;
         margin: 0;
         padding: 0;
     }
-    
+
     section {
         width: 100%
     }
-    
+
     aside {
         display: flex;
         flex-direction: column;
@@ -584,32 +584,32 @@ aside div {
         justify-content: space-between;
         width: 100%;
     }
-    
+
     .bio_block {
         clear: none;
     }
-    
+
     #block {
         flex: 1 auto;
         margin-right: 0px;
     }
-    
+
     #block2 {
         flex: 1 auto;
         margin-left: 0px;
     }
-    
+
     .status_img {
         max-width: 200px;
         width: 80%;
     }
-    
+
     .bio_block img {
         min-width: 100px;
         width: 100%;
     }
 }
-} /* not sure what this bracket is for... 
+} /* not sure what this bracket is for...
 /****************** Map Styling *********************/
 
 #mapContainer {
@@ -618,3 +618,9 @@ aside div {
     margin: 0 auto;
     background-color: none;
 }
+
+  #see_more {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
