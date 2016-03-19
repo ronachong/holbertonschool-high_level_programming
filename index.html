@@ -19,6 +19,7 @@
         <script src="reply.js"></script>
         <script src="addLoadEvent.js"></script>
         <script src="toggle.js"></script>
+        <script src="ajax.js"></script>
         <script src="load_more.js"></script>
     </head>
 
@@ -100,7 +101,7 @@
                     <!--block 2-->
                     <div class="status_update orange">
                         <div class="image_block">
-                            <img alt="image of user" class="status_img" src="https://holbertonintranet.s3.amazonaws.com/users/photos/000/000/020/thumb/rona_square_img.JPG?1453083037" />
+                            <img alt="image of user" class="status_img" src="https://holbertonintranet.s3.amazonaws.com/users/photos/000/000/020/thumb/images.png?1458239784" />
                             <h6>Rona Chong</h6>
                             <h6>2/02/2016</h6>
                         </div>
@@ -141,7 +142,7 @@
                         </div>
 
                         <h2></h2>
-                        <button class="reply_link button" type="button" onclick="loadDoc()">See more statuses</button>
+                        <button id="see_more" class="reply_link button" type="button" >See more statuses</button>
                         <div id="demo"></div>
 
                 </section>
