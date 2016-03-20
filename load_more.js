@@ -5,9 +5,7 @@ window.onload = function load_more() {
     };
 
     see_more.onclick = function () {
-        var timeDelay = 2000;
-        var ajaxRequest = ajaxGet("/statuses-1.html", makeResponseText);
-        setTimeout(ajaxRequest, timeDelay);
+        ajaxGet("/statuses-1.html", makeResponseText);
     };
 };
 
