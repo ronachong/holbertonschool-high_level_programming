@@ -4,15 +4,11 @@ var toggle_reply_again = function () {
     console.log("New reply forms are stored in " + more_reply_links_array);
     var reply_id = null; //will be assigned val later
     var reply_form = null;
-    
-    more_reply_links_array[0].addEventListener("click", function () {
-        console.log("I see you doing THIS.");
-    });
 
     for (var i = 0; i < more_reply_links_array.length; i++) {
         console.log("Loop thru array.");
-        
-        
+
+
         more_reply_links_array[i].addEventListener("click", function () {
             console.log("I see this click.");
             reply_id = this.getAttribute("data-form_no");
@@ -24,7 +20,7 @@ var toggle_reply_again = function () {
 }
 
 function ajaxGet(url, onSuccess) {
-    
+
     // doStuff makes an Ajax request and runs script for toggling of more replies
     var doStuff = function (url, onSuccess) {
         var xhttp = new XMLHttpRequest();
@@ -36,12 +32,9 @@ function ajaxGet(url, onSuccess) {
         };
         xhttp.open("GET", url, true);
         xhttp.send();
-        
+
         document.getElementById("see_more").style.display = 'none';
     };
-    
+
     setTimeout(doStuff, 2000, url, onSuccess);
 }
-
-
-    

@@ -1,3 +1,4 @@
+//when button is clicked, page loads more satuses
 function load_more() {
     var see_more = document.getElementById('see_more');
     var makeResponseText = function (string) {
@@ -10,17 +11,3 @@ function load_more() {
 }
 
 document.addEventListener("DOMContentLoaded", load_more);
-
-
-
-
-/* function loadDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (xhttp.readyState == 4 && xhttp.status == 200) {
-      document.getElementById("demo").innerHTML = xhttp.responseText;
-    }
-  };
-  xhttp.open("GET", "/statuses-1.html", true);
-  xhttp.send();
-} */
