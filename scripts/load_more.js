@@ -1,4 +1,4 @@
-window.onload = function load_more() {
+function load_more() {
     var see_more = document.getElementById('see_more');
     var makeResponseText = function (string) {
         document.getElementById("demo").innerHTML = string;
@@ -9,6 +9,7 @@ window.onload = function load_more() {
     };
 };
 
+document.addEventListener("DOMContentLoaded", load_more);
 
 
 
