@@ -1,13 +1,13 @@
 function load_more() {
     var see_more = document.getElementById('see_more');
     var makeResponseText = function (string) {
-        document.getElementById("demo").innerHTML = string;
+        document.getElementById("more_statuses").innerHTML = string;
     };
 
     see_more.onclick = function () {
         ajaxGet("/statuses-1.html", makeResponseText);
     };
-};
+}
 
 document.addEventListener("DOMContentLoaded", load_more);
 
