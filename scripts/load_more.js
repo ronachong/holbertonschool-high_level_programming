@@ -1,17 +1,15 @@
-window.onload = function load_more() {
+function load_more() {
     var see_more = document.getElementById('see_more');
     var makeResponseText = function (string) {
-      document.getElementById("demo").innerHTML = string;
-    }
+        document.getElementById("more_statuses").innerHTML = string;
+    };
 
     see_more.onclick = function () {
-      var timeDelay = 2000;
-      var ajaxRequest = ajaxGet("/statuses-1.html", makeResponseText);
-
-      setTimeout(ajaxRequest, timeDelay);
-  }
+        ajaxGet("/statuses-1.html", makeResponseText);
+    };
 }
 
+document.addEventListener("DOMContentLoaded", load_more);
 
 
 

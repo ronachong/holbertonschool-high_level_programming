@@ -9,14 +9,6 @@ function toggle_reply() {
             reply_form = document.getElementById(reply_id);
             reply_form.toggle();
             this.style.display = "none"; //this is still the reply link
-            
-            
-           /* if (reply_form.style.display == "none" || reply_form.style.display == "") {
-                reply_form.style.display = "block";
-                
-            this.style.display = "none"; //this is still the reply link
-            }
-            */
         })                                    
     }
 }
