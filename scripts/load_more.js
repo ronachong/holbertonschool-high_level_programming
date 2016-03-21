@@ -5,7 +5,7 @@ function load_more() {
     };
 
     see_more.onclick = function () {
-        ajaxGet("http://krisbredemeier.github.io/holbertonschool-impossible_octopus_fitness/status-1.html", makeResponseText);
+        ajaxGet("http://krisbredemeier.github.io/holbertonschool-impossible_octopus_fitness/statuses-1.html", makeResponseText);
     };
 }
 
