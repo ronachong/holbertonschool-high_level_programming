@@ -7,6 +7,9 @@ function load_more() {
 
     see_more.onclick = function () {
         ajaxGet("http://krisbredemeier.github.io/holbertonschool-impossible_octopus_fitness/statuses-1.html", makeResponseText);
+        document.getElementById("see_more").disabled = true;
+        document.getElementById("see_more").style.background='#d9d9d9';
+        document.body.style.cursor = "wait";
     };
 }
 
