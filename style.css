@@ -360,6 +360,23 @@ aside div {
 
 /****************** Footer Styles *********************/
 
+.footer_background {
+	background: url(https://intranet.hbtn.io/images/contents/higher_level_programming/projects/twitter/dark-background.jpg) center top;
+	bottom: 2px;
+	float: left;
+	height: 100px;
+	position: relative;
+	width: 100%;
+	margin: 10px 0px;
+}
+
+.follow {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+
 #footer_msg {
 	position: fixed;
 	bottom: 0;
@@ -618,5 +635,3 @@ aside div {
     margin: 0 auto;
     background-color: none;
 }
-
-  
