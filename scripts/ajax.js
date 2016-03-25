@@ -1,3 +1,4 @@
+//this function toggles on and off the new reply-forms
 var toggle_reply_again = function () {
     var more_reply_links_array = document.querySelectorAll('#more_statuses .reply_link');
     console.log("Made new array for new reply forms.");
@@ -27,7 +28,16 @@ function ajaxGet(url, onSuccess) {
         xhttp.onreadystatechange = function () {
             if (xhttp.readyState == 4 && xhttp.status == 200) {
                 onSuccess(xhttp.responseText);
+                var new_reply_forms = document.querySelectorAll("#more_statuses .reply_form");
+                var new_reply_buttons = document.querySelectorAll("#more_statuses .reply_link");
+                for (var i = 0; i < new_reply_forms.length; i++) {
+                  new_reply_forms[i].style.display = "none";
+                }
+                for (var i = 0; i < new_reply_buttons.length; i++) {
+                  new_reply_buttons[i].style.display = "block";
+                }
                 toggle_reply_again();
+                document.body.style.cursor = "default";
             }
         };
         xhttp.open("GET", url, true);

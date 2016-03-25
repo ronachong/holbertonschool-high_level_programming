@@ -10,6 +10,9 @@ function load_more() {
         see_more.disabled = true;
         see_more.style.background = "#FFFFFE";
         see_more.style.cursor = "wait";
+        document.getElementById("see_more").disabled = true;
+        document.getElementById("see_more").style.background='#d9d9d9';
+        document.body.style.cursor = "wait";
     };
 }
 

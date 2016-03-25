@@ -261,6 +261,7 @@ h2 {
     display: flex;
     justify-content: center;
     margin: 0 50px 40px 50px;
+		display: none;
 }
 
 textarea {
@@ -292,7 +293,7 @@ textarea {
 }
 
 #status_form {
-    display: none;
+    display: block;
 }
 
 .reply_div {
@@ -307,10 +308,11 @@ textarea {
 .reply_link {
     text-align: center;
     margin-bottom: 20px;
+		display: none;
 }
 
 .reply_form {
-    display: none;
+    display: block;
 }
 
 .reply_div label {
@@ -359,6 +361,23 @@ aside div {
 }
 
 /****************** Footer Styles *********************/
+
+.footer_background {
+	background: url(https://intranet.hbtn.io/images/contents/higher_level_programming/projects/twitter/dark-background.jpg) center top;
+	bottom: 2px;
+	float: left;
+	height: 100px;
+	position: relative;
+	width: 100%;
+	margin: 10px 0px;
+	display: flex;
+	justify-content: center;
+}
+.twitter-follow-button {
+	margin-top: 35px;
+}
+
+
 
 #footer_msg {
 	position: fixed;
@@ -618,5 +637,3 @@ aside div {
     margin: 0 auto;
     background-color: none;
 }
-
-  
