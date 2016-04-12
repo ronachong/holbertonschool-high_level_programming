@@ -61,12 +61,18 @@ function userExists ($login, $password, $users) {
 			<p>____________________________________________</p>
 
 			<?php
-			if (array_key_exists("login", $_POST)) {
-			   echo '<p>Hello, ', $_POST['login'], '!</p>';
-			   echo '<p>Your rot13\'d login is: ', str_rot13($_POST['login']), '</p>';
-			   echo '<p>The length of your login is: ', strlen($_POST['login']), '</p>';
-			} else {
-			   echo '<p>Hello, there!</p>';
+
+			if (array_key_exists("login", $_POST) == false) {
+				echo '<p>Hello, there!</p>';
+			}
+			else if (userExists($_POST['login'], $_POST['password'], $users) == false {
+				echo '<p>Hello, there!</p>';
+				echo '<p>Invalid credentials</p>';
+			else {
+				$user_credentials = (userExists($_POST['login'], $_POST['password'], $users);
+			   	echo '<p>Hello, ', $user_credentials['full_name'], '!</p>';
+			   	echo '<p>Your rot13\'d login is: ', str_rot13($_POST['login']), '</p>';
+				echo '<p>The length of your login is: ', strlen($_POST['login']), '</p>';
 			}
 			?>
                 </div>
