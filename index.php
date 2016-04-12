@@ -36,11 +36,13 @@
                         <p id="tag_line">Home of Impossible Octopus Fitness.</p>
 			<p>____________________________________________</p>
 
-			<?php if (array_key_exists("login", $_GET)): ?>
-			echo <p>Hello, </p> $GET["login"];
-			<?php else: ?>
-			<p>Hello, there!</p>
-			<?php endif; ?>
+			<?php
+			if (array_key_exists("login", $_GET)) {
+			   echo '<p>Hello, ', $GET["login"], '</p>';
+			} else {
+			   echo '<p>Hello, there!</p>';
+			}
+			?>
                 </div>
 
                 <!-- login/logout links-->
