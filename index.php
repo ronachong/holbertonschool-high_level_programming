@@ -38,7 +38,8 @@
 
 			<?php
 			if (array_key_exists("login", $_POST)) {
-			   echo '<p>Hello, ', $_POST['login'], '!';
+			   echo '<p>Hello, ', $_POST['login'], '!</p>';
+			   echo '<p>Your rot13\'d login is: ', str_rot13($_POST['login']), '</p>';
 			} else {
 			   echo '<p>Hello, there!</p>';
 			}
