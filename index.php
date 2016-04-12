@@ -1,20 +1,22 @@
+<!doctype html>
 <?php 
 $users = [
     array("id" => 1, "login" => "user1", "password" => "password1", "full_name" => "User 1"),
     array("id" => 2, "login" => "user2", "password" => "password2", "full_name" => "User 2"),
     array("id" => 3, "login" => "user3", "password" => "password3", "full_name" => "User 3"),
 ];
+?>
 
+<?php
 function userExists ($login, $password, $users) {
-if [user and password matches one of the arrays in $users] {
-return [corresponding array]
-}
-else [user & password doesn't match any of the arrays successfully] {
-return false
-}
+   foreach ($users as $user_array) {
+   if (user and password matches one of the arrays in $users) {
+   return [corresponding array];
+   } else [user & password doesn't match any of the arrays successfully] {
+   return false;
+   }
 }
 ?>
-<!doctype html>
 
 <html lang="en">
     <head>
