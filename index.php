@@ -34,7 +34,13 @@
                         <img id="warbler_logo" width="100" src="http://www.procliparts.com/cliparts/pele/ekiE9gTAo-orange-bird.png" alt="log">
                         <h1>Warbler</h1>
                         <p id="tag_line">Home of Impossible Octopus Fitness.</p>
+			<p>____________________________________________</p>
 
+			<?php if (array_key_exists("login", $_GET)): ?>
+			<p>Hello, </p> $GET["login"];
+			<?php else: ?>
+			<p>Hello, there!</p>
+			<?php endif; ?>
                 </div>
 
                 <!-- login/logout links-->
