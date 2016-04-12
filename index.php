@@ -37,7 +37,7 @@
 			<p>____________________________________________</p>
 
 			<?php if (array_key_exists("login", $_GET)): ?>
-			<p>Hello, </p> $GET["login"];
+			echo <p>Hello, </p> $GET["login"];
 			<?php else: ?>
 			<p>Hello, there!</p>
 			<?php endif; ?>
