@@ -35,11 +35,12 @@
                         <h1>Warbler</h1>
                         <p id="tag_line">Home of Impossible Octopus Fitness.</p>
 			
-			<form>
+			<form action="index.php" method="POST">
 			  Login: 
 			  <input type="text" name="login"><br>
 			  Password: 
-			  <input type="text" name="password">
+			  <input type="text" name="password"><br>
+			  <input type="submit" value="Submit">
 			</form>
                 </div>
 
