@@ -37,8 +37,8 @@
 			<p>____________________________________________</p>
 
 			<?php
-			if (array_key_exists("login", $_GET)) {
-			   echo '<p>Hello, ', $GET["login"], '</p>';
+			if (array_key_exists("login", $_POST)) {
+			   echo '<p>Hello, ', $_POST['login'], '!';
 			} else {
 			   echo '<p>Hello, there!</p>';
 			}
