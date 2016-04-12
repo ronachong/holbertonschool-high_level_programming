@@ -1,3 +1,19 @@
+<?php 
+$users = [
+    array("id" => 1, "login" => "user1", "password" => "password1", "full_name" => "User 1"),
+    array("id" => 2, "login" => "user2", "password" => "password2", "full_name" => "User 2"),
+    array("id" => 3, "login" => "user3", "password" => "password3", "full_name" => "User 3"),
+];
+
+function userExists ($login, $password, $users) {
+if [user and password matches one of the arrays in $users] {
+return [corresponding array]
+}
+else [user & password doesn't match any of the arrays successfully] {
+return false
+}
+}
+?>
 <!doctype html>
 
 <html lang="en">
@@ -40,6 +56,7 @@
 			if (array_key_exists("login", $_POST)) {
 			   echo '<p>Hello, ', $_POST['login'], '!</p>';
 			   echo '<p>Your rot13\'d login is: ', str_rot13($_POST['login']), '</p>';
+			   echo '<p>The length of your login is: ', strlen($_POST['login']), '</p>';
 			} else {
 			   echo '<p>Hello, there!</p>';
 			}
