@@ -5,16 +5,22 @@ $users = [
     array("id" => 2, "login" => "user2", "password" => "password2", "full_name" => "User 2"),
     array("id" => 3, "login" => "user3", "password" => "password3", "full_name" => "User 3"),
 ];
-?>
 
-<?php
+/* userExists takes the inputs:
+		$login (string): the login that the user is trying to login with, passed from login.php.
+		$password (string): password that the user is trying to login with, passed from login.php.
+		$users (array of arrays): global var $users, representing the site's users.
+	and returns false if no user exists with the provided credentials,
+	or the corresponding array if the credentials match one of the users'. */
 function userExists ($login, $password, $users) {
-   foreach ($users as $user_array) {
-   if (user and password matches one of the arrays in $users) {
-   return [corresponding array];
-   } else [user & password doesn't match any of the arrays successfully] {
+	// loop thru array of user arrays and return appropriate array if match is found
+	foreach ($users as $user_array) {
+   		if ($login == $user_array['login'] && $password == $user_array['password']) {
+   			return $user_array;
+   		}
+	}
+   // else
    return false;
-   }
 }
 ?>
 
