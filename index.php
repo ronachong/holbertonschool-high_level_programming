@@ -57,24 +57,24 @@ function userExists ($login, $password, $users) {
                 <div id="header_block">
                         <img id="warbler_logo" width="100" src="http://www.procliparts.com/cliparts/pele/ekiE9gTAo-orange-bird.png" alt="log">
                         <h1>Warbler</h1>
-                        <p id="tag_line">Home of Impossible Octopus Fitness.</p>
-			<p>____________________________________________</p>
+                        <p id="tag_line">Home of Impossible Octopus Fitness.</p><p>____________________________________________</p>
+                        <div id="greeting">
+                            <?php
 
-			<?php
-
-			if (array_key_exists("login", $_POST) == false) {
-				echo '<p>Hello, there!</p>';
-			}
-			else if (userExists($_POST['login'], $_POST['password'], $users) == false) {
-				echo '<p>Hello, there!</p>';
-				echo '<p>Invalid credentials</p>';
-			} else {
-				$user_credentials = userExists($_POST['login'], $_POST['password'], $users);
-			   	echo '<p>Hello, ', $user_credentials['full_name'], '!</p>';
-			   	echo '<p>Your rot13\'d login is: ', str_rot13($_POST['login']), '</p>';
-				echo '<p>The length of your login is: ', strlen($_POST['login']), '</p>';
-			}
-			?>
+                            if (array_key_exists("login", $_POST) == false) {
+                                echo '<p>Hello, there!</p>';
+                            }
+                            else if (userExists($_POST['login'], $_POST['password'], $users) == false) {
+                                echo '<p>Hello, there!</p>';
+                                echo '<p>Invalid credentials</p>';
+                            } else {
+                                $user_credentials = userExists($_POST['login'], $_POST['password'], $users);
+                                echo '<p>Hello, ', $user_credentials['full_name'], '!</p>';
+                                echo '<p class="small">Your rot13\'d login is: ', str_rot13($_POST['login']), '</p>';
+                                echo '<p class="small">The length of your login is: ', strlen($_POST['login']), '</p>';
+                            }
+                            ?>
+                    </div>
                 </div>
 
                 <!-- login/logout links-->
@@ -198,7 +198,7 @@ function userExists ($login, $password, $users) {
                             <br>
                             <p>Mr. Smiley</p>
                         </div>
-                        <p class="bio_paragraph">
+                        <p class="bio_paragraph small">
                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                     </div>
@@ -211,7 +211,7 @@ function userExists ($login, $password, $users) {
                             <br>
                             <p>The Marketing Guy</p>
                         </div>
-                        <p class="bio_paragraph">
+                        <p class="bio_paragraph small">
                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                     </div>
