@@ -373,6 +373,7 @@ aside div {
 	display: flex;
 	justify-content: center;
 }
+
 .twitter-follow-button {
 	margin-top: 35px;
 }
@@ -489,6 +490,43 @@ aside div {
 	margin: 10px;
 }
 
+/****************** Styles for Login Page *********************/
+
+body.login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login #container {
+    width: auto;
+}
+
+.login #header_block {
+    margin: 0;
+    padding: 25px;
+}
+
+.login h1 {
+    margin: 0 40px 0 30px;
+}
+
+.login #tag_line {
+    margin-bottom: 20px;
+}
+
+.login input[type="text"] {
+    margin-bottom: 5px;
+}
+
+input[name="login"] {
+    margin-left: 30px;
+}
+
+input[value="Submit"] {
+ margin: 10px;   
+}
 /****************** Media Queries *********************/
 
 @media only screen and (max-width: 992px) {
