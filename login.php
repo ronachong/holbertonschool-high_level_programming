@@ -23,7 +23,7 @@
     </head>
 
 
-    <body>
+    <body class="login">
         <div id="container">
 
             <!-- HEADER -->
@@ -36,7 +36,7 @@
                         <p id="tag_line">Home of Impossible Octopus Fitness.</p>
 			
 			<form action="index.php" method="POST">
-			  Login: 
+			  Login:      
 			  <input type="text" name="login"><br>
 			  Password: 
 			  <input type="text" name="password"><br>
