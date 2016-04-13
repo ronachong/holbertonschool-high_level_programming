@@ -64,6 +64,10 @@ header, main, footer {
     margin: 0 10px;
 }
 
+#header_cont, main, footer {
+    background-color: #ffeee5;
+}
+
 
 /****************** Prefixes for Browsers ******************/
 /*
@@ -102,7 +106,7 @@ Thank you @chriscoyier !
 	border-radius: 5px;
 	border-color: black;
     list-style:none;
-	background: linear-gradient(0deg, #ffddaa, #ffefaa);
+	background: linear-gradient(0deg, #ffbb99, #ffdd99);
 }
 
 
@@ -114,6 +118,13 @@ p {
 
 p.small {
     font-size: 14px;
+}
+
+.warning {
+    color: darkred;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 22px;
 }
 
 /******************* Header Styles *******************/
@@ -229,7 +240,7 @@ h1 {
 	text-align: center;
 	padding: 5px 25px;
 	border: 1px;
-	border-radius: 25px;
+	border-radius: 5px;
 	border-color: black;
     list-style:none;
 	background: linear-gradient(0deg, #ffdd99, #ffbb99);
@@ -254,7 +265,6 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #ffeee5;
 }
 
 section {
@@ -377,13 +387,8 @@ aside {
 /****************** Footer Styles *********************/
 
 .footer_background {
-	background: url(https://intranet.hbtn.io/images/contents/higher_level_programming/projects/twitter/dark-background.jpg) center top;
-	bottom: 2px;
-	float: left;
 	height: 100px;
-	position: relative;
-	width: 100%;
-	margin: 10px 0px;
+	margin-top: 30px;
 	display: flex;
 	justify-content: center;
 }

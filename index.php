@@ -66,7 +66,7 @@ function userExists ($login, $password, $users) {
                             }
                             else if (userExists($_POST['login'], $_POST['password'], $users) == false) {
                                 echo '<p>Hello, there!</p>';
-                                echo '<p>Invalid credentials</p>';
+                                echo '<p class="warning">Invalid credentials</p>';
                             } else {
                                 $user_credentials = userExists($_POST['login'], $_POST['password'], $users);
                                 echo '<p>Hello, ', $user_credentials['full_name'], '!</p>';
